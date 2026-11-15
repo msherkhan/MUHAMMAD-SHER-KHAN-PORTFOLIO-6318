@@ -352,16 +352,33 @@ footer a {
 }
 
 @media (max-width: 767px) {
-  .skill-list:has(p) {
-    grid-template-columns: 1fr;
-    gap: 8px 0;
-    margin-bottom: 18px;
-  }
+    .intro-text h1 {
+        font-size: 35px;
+    }
+
+    .menu-links {
+        right: 5%;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro > img {
+        order: -1;
+        margin: 0 auto;
+    }
+
+    .skill-list:has(p) {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .skill-list li {
+        width: 100%;
+        max-width: 260px;
+    }
 }
-  .skill-list li {
-    width: 100%;
-    max-width: 260px;
-  }
 
 @media (min-width: 768px) { 
   .menu-button {
